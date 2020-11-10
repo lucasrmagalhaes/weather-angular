@@ -1,0 +1,84 @@
+OpenWeather - API:
+https://home.openweathermap.org/api_keys
+key: 27bca435e21b8366ad9f6163257475f9
+
+Verificando as versões:
+node -v
+ng version
+
+Instalação do Angular:
+npm install -g @angular/cli@latest
+ng new weather
+cd weather
+
+Iniciando o Projeto:
+ng s
+localhost:4200
+
+Configurações iniciais:
+Diretório shared e o arquivo cities.json copiados do projeto original.
+
+enviroment.ts
+apiKey: '27bca435e21b8366ad9f6163257475f9'
+
+tslint.json -> Separação das páginas - responsabilidade.
+    "component-class-suffix": [
+      true,
+      "Component",
+      "Page"
+    ],
+
+Criando as páginas:
+ng g m pages/home
+ng g m pages/bookmarks
+
+Criando componentes:
+ng g c pages/home --type page
+ng g c pages/bookmarks --type page
+
+app-routing.module.ts -> Importando HomePage e BookmarksPage:
+const routes: Routes = [
+  { path: '', component: HomePage },
+  { path: 'bookmarks', component: BookmarksPage },
+];
+
+home.page.html
+Definindo o esqueleto básico.
+
+NGRX
+ngrx.io/guide/store
+
+ng add @ngrx/store
+
+home.reducer.ts
+Definindo o esqueleto.
+
+ng add @ngrx/store-devtools
+
+Extensão do Chrome:
+Instalar - Redux DevTools
+
+ngrx/Store
+Manipulando a Store.
+
+ngrx/Effects
+ng add @ngrx/effects
+
+ng g s shared/services/weather --skipTests true
+ng g c pages/home/components/current-weather
+ng g m pages/details
+ng g c pages/details/containers/details --type page
+ng g s pages/details/services/details.guard --skipTests
+
+ngrx/router-store
+ng add @ngrx/router-store
+
+ngx-bootstrap
+Typeahead -> Pesquisa com sugestões
+ng add ngx-bootstrap
+ng g c shared/components/cities-typeahead
+
+angular/cdk
+npm i @angular/cdk
+
+ng g c pages/home/containers/unit-selector
