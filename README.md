@@ -1,6 +1,6 @@
-<h2 align="center">Previsão do Tempo (API: Open Weather) com Angular e TypeScript</h2>
+<h3 align="center">Previsão do Tempo (API: Open Weather) com Angular e TypeScript</h3>
 
-<h3 align="center">Comandos</h3>
+<h4 align="center">Comandos</h4>
 
 ***Instalação do Angular:***
 ```
@@ -49,12 +49,17 @@ http://localhost:4200/
 ng config -g cli.warnings.versionMismatch false
 ```
 
-***NGRX:***
+***NGRX: Store***
 ```
 ng add @ngrx/store
 ```
 ```
 ng add @ngrx/store-devtools
+```
+
+***NGRX: Effect***
+```
+ng add @ngrx/effects
 ```
 
 <h3 align="center">Links</h3>
