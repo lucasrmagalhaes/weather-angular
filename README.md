@@ -1,9 +1,6 @@
-### Previsão do Tempo (API: Open Weather) com Angular e TypeScript
+<h3 align="center">Previsão do Tempo (API: Open Weather) com Angular e TypeScript</h3>
 
-[API: OpenWeather - Keys](https://home.openweathermap.org/api_keys)
-
-
-<h5 align="center">Comandos</h5>
+<h4 align="center">Comandos</h4>
 
 ***Instalação do Angular:***
 ```
@@ -51,3 +48,7 @@ http://localhost:4200/
 ```
 ng config -g cli.warnings.versionMismatch false
 ```
+
+* [API: OpenWeather - Keys](https://home.openweathermap.org/api_keys)
+* [jv-weather](https://github.com/JGhignatti/jv-weather)
+* [NGRX](https://ngrx.io/)
