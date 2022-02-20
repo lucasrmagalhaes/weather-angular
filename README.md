@@ -1,6 +1,6 @@
-<h3 align="center">Previsão do Tempo (API: Open Weather) com Angular e TypeScript</h3>
+<h2 align="center">Previsão do Tempo (API: Open Weather) com Angular e TypeScript</h2>
 
-<h4 align="center">Comandos</h4>
+<h3 align="center">Comandos</h3>
 
 ***Instalação do Angular:***
 ```
@@ -49,6 +49,18 @@ http://localhost:4200/
 ng config -g cli.warnings.versionMismatch false
 ```
 
-* [API: OpenWeather - Keys](https://home.openweathermap.org/api_keys)
-* [jv-weather](https://github.com/JGhignatti/jv-weather)
-* [NGRX](https://ngrx.io/)
+***NGRX:***
+```
+ng add @ngrx/store
+```
+```
+ng add @ngrx/store-devtools
+```
+
+<h3 align="center">Links</h3>
+
+[API: OpenWeather - Keys](https://home.openweathermap.org/api_keys) <br>
+[jv-weather](https://github.com/JGhignatti/jv-weather) <br>
+[NGRX](https://ngrx.io/) <br>
+[NGRX: Store](ngrx.io/guide/store) <br>
+[Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=pt-BR)
