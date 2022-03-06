@@ -9,7 +9,6 @@ import * as fromHomeActions from './home.actions';
 
 @Injectable()
 export class HomeEffects {
-
   loadCurrentWeather$ = createEffect(() => this.actions$
     .pipe(
       ofType(fromHomeActions.loadCurrentWeather),
@@ -22,8 +21,9 @@ export class HomeEffects {
     ),
   );
 
-  constructor(private actions$: Actions,
-              private store: Store,
-              private weatherService: WeatherService) {
-  }
+  constructor(
+    private actions$: Actions,
+    private store: Store,
+    private weatherService: WeatherService
+  ) {}
 }
