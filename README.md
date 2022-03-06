@@ -62,6 +62,14 @@ ng add @ngrx/store-devtools
 ng add @ngrx/effects
 ```
 
+***Criando os componentes***
+```
+ng g c pages/home/components/current-weather
+```
+```
+ng g c /shared/components/detailed-weather
+```
+
 <h3 align="center">Links</h3>
 
 [API: OpenWeather - Keys](https://home.openweathermap.org/api_keys) <br>
